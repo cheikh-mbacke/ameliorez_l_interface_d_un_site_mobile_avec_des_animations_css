@@ -10,7 +10,7 @@ Ma mission principale fut d'intégrer une maquette en approche **mobile-first**.
 - Prototype sur Figma
 - Images et textes nécessaires
 
-Le lien vers la maquette : [Voir la maquette](lien https vers la maquette)
+Le lien vers la maquette : [Voir la maquette](https://github.com/cheikh-mbacke/ameliorez_l_interface_d_un_site_mobile_avec_des_animations_css/tree/main/mequette)
 
 Cette approche **mobile-first** m'a permis de comprendre l'importance de concevoir des sites web qui sont non seulement adaptatifs mais également réactifs.
 
@@ -26,4 +26,4 @@ L'utilisation de **SASS**, un pré-processeur CSS, a étendu les fonctionnalité
 
 ---
 
-Ce projet a été une opportunité formidable pour développer mes compétences en design web réactif et en animations, tout en renforçant ma maîtrise des outils de développement frontend modernes.
+Lien démo : [cliquez ici](https://cheikh-mbacke.github.io/ameliorez_l_interface_d_un_site_mobile_avec_des_animations_css/)
