@@ -1,0 +1,238 @@
+/****************************** Menu ********************************/
+
+/** Header **/
+
+.headerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+  
+    & i {
+      position: absolute;
+      left: 0;
+      bottom: 35%;
+      padding: 0 30px;
+    }
+}
+
+/****************************** Main ********************************/
+
+/** Illustration **/
+
+.restaurantPage__img img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.restaurantContent {
+    align-items: center;
+    &__container {
+        margin-top: -4rem;
+        background: white;
+        border-radius: 3rem 3rem 0 0;
+        position: relative;
+        background: $background-color;
+        width: 100%;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+      & .favorite {
+        right: 20px;
+      }
+    }
+    &__menu {
+      padding: 40px 20px;
+    }
+}
+  
+/** Menus **/
+.menu {
+    &__content {
+    margin-bottom: 2.5rem;
+    transform-origin: top;
+    animation: menuAppear 1s both ease;
+    }
+    & hr {
+        margin-bottom: 0.75rem;
+        height: 3px;
+        background-color: $tertiary-color;
+        width: 40px;
+        border: none;
+    }
+    &__title {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    }
+}
+
+.menuSection {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 12px;
+  transform: scale(0);
+  opacity: 1;
+  animation: sectionAppear 1s forwards ease;
+  &:hover {
+    cursor: pointer;
+  }
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 20px 20px 0;
+  }
+  &__food {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    padding: 15px;
+    transition: all 400ms ease-out;
+  }
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+    & p, h4 {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+  &__price {
+    display: flex;
+    align-items: end;
+    font-weight: 700;
+    margin-left: 0.5rem;
+    & p {
+      font-weight: 700;
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #99e2d0;
+    position: absolute;
+    width: 3.5rem;
+    height: 100%;
+    right: -6rem;
+    transition: all 400ms ease-out;
+    &--transform {
+      border-radius: 40px;
+      padding: 2px 4px;
+      background: white;
+    }
+  }
+}
+
+.fa-check {
+  color: $tertiary-color;
+  font-weight: 900;
+}
+
+.menuSection:hover .menuSection__food {
+  margin-right: 3.5rem;
+}
+
+.menuSection:hover .menuSection__btn {
+  cursor: pointer;
+  right: 0;
+}
+
+.menuAnim-1 {
+    animation-delay: 0ms;
+}
+  
+.menuAnim-2 {
+    animation-delay: 250ms;
+}
+  
+.menuAnim-3 {
+    animation-delay: 325ms;
+}
+
+.anim-1 { 
+  animation-delay: 0ms; 
+}
+.anim-2 { 
+  animation-delay: 50ms; 
+}
+.anim-3 { 
+  animation-delay: 100ms; 
+}
+.anim-4 { 
+  animation-delay: 150ms; 
+}
+.anim-5 { 
+  animation-delay: 200ms; 
+}
+.anim-6 { 
+  animation-delay: 250ms; 
+}
+.anim-7 { 
+  animation-delay: 300ms; 
+}
+.anim-8 { 
+  animation-delay: 400ms; 
+}
+.anim-9 { 
+  animation-delay: 450ms; 
+}
+.anim-10 { 
+  animation-delay: 500ms; 
+}
+
+.menu__command {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    margin-top: -2.5rem;
+}
+
+/****************************** Media Queries ********************************/
+
+@media (min-width: 1024px) {
+
+  .restaurantPage__img img {
+    height: 500px;
+  }
+
+  .restaurantContent {
+    &__container {
+    max-width: 1440px;
+    width: 100%;
+    }
+    &__title {
+    justify-content: center;
+      & h1 {
+      margin-right: 2.5rem;
+      }  
+    }
+    &__menu {
+      max-width: 1024px;
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+  .menuSection__content {
+    display: flex;
+    align-items: center;
+  }
+}

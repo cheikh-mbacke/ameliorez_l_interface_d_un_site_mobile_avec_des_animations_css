@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OhMyFood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__shadow">
+            <div class="headerMenu">
+                <a href="index.html"> 
+                    <i class="fas fa-arrow-left"></i>
+                    <!-- Retour à l'index -->
+                </a>
+                <h1 class="headerMenu__logo">ohmyfood</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="restaurantPage">
+        <!-- Illustration -->
+        <div class="restaurantPage__img">
+            <img src="images/restaurants/foliemericourt.jpg" alt="Folie-Méricourt">
+        </div>
+        <!-- Menus du restaurant -->
+        <div class="restaurantContent">
+            <div class="restaurantContent__container">
+                <div class="restaurantContent__menu">
+                    <div class="restaurantContent__title">
+                        <h1>Le délice des sens</h1>
+                        <article class="favorite">
+                            <input type="checkbox" class="favorite__toggle">
+                            <label class="favorite__icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </label>
+                        </article>
+                    </div>
+                    <div class="menu">
+                        <!-- Entrées -->
+                        <div class="menu__content menuAnim-1">
+                            <h5 class="menu__title">Entrées</h5>
+                            <hr>
+                            <section class="menuSection anim-1">
+                                <div class="menumenuSection__content">
+                                    <div class="menuSection__food">
+                                        <div class="menuSection__desc">
+                                            <h4>Tartare de thon</h4>
+                                            <p>Assaisonné au yuzu</p>
+                                        </div>
+                                        <div class="menuSection__price">
+                                            <p>25€</p>
+                                        </div>
+                                    </div>
+                                    <div class="menuSection__btn">
+                                        <div class="menuSection__btn--transform">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="menuSection anim-2">
+                                <div class="menuSection__content">
+                                    <div class="menuSection__food">
+                                        <div class="menuSection__desc">
+                                            <h4>Bouchée de homard croustillant</h4>
+                                            <p>Et sa farandole de petits légumes</p>
+                                        </div>
+                                        <div class="menuSection__price">
+                                            <p>35€</p>
+                                        </div>
+                                    </div>
+                                    <div class="menuSection__btn">
+                                        <div class="menuSection__btn--transform">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="menuSection anim-3">
+                                <div class="menuSection__content">
+                                    <div class="menuSection__food">
+                                        <div class="menuSection__desc">
+                                            <h4>Velouté de cèpes</h4>
+                                            <p>Aux truffes</p>
+                                        </div>
+                                        <div class="menuSection__price">
+                                            <p>20€</p>
+                                        </div>
+                                    </div>
+                                    <div class="menuSection__btn">
+                                        <div class="menuSection__btn--transform">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- Plats -->
+                        <div class="menu__content">
+                            <h5 class="menu__title">Plats</h5>
+                            <hr>
+                            <section class="menuSection anim-5">
+                                <div class="menuSection__content">
+                                    <div class="menuSection__food">
+                                        <div class="menuSection__desc">
+                                            <h4>Poulet rôti aux herbes de Provence</h4>
+                                            <p>Et sa crème de truffe</p>
+                                        </div>
+                                        <div class="menuSection__price">
+                                            <p>40€</p>
+                                        </div>
+                                    </div>
+                                    <div class="menuSection__btn">
+                                        <div class="menuSection__btn--transform">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="menuSection anim-6">
+                                <div class="menuSection__content">
+                                    <div class="menuSection__food">
+                                        <div class="menuSection__desc">
+                                            <h4>Langouste rôtie</h4>
+                                            <p>Et ses légumes de saison</p>
+                                        </div>
+                                        <div class="menuSection__price">
+                                            <p>35€</p>
+                                        </div>
+                                    </div>
+                                    <div class="menuSection__btn">
+                                        <div class="menuSection__btn--transform">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="menuSection anim-7">
+                                <div class="menuSection__content">
+                                    <div class="menuSection__food">
+                                        <div class="menuSection__desc">
+                                            <h4>Côte de bœuf Angus</h4>
+                                            <p>Et sa purée de panais</p>
+                                        </div>
+                                        <div class="menuSection__price">
+                                            <p>44€</p>
+                                        </div>
+                                    </div>
+                                    <div class="menuSection__btn">
+                                        <div class="menuSection__btn--transform">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- Desserts -->
+                        <div class="menu__content">
+                            <h5 class="menu__title">Desserts</h5>
+                            <hr>
+                            <section class="menuSection anim-8">
+                                <div class="menuSection__content">
+                                    <div class="menuSection__food">
+                                        <div class="menuSection__desc">
+                                            <h4>Farandole de desserts</h4>
+                                            <p>Du chef</p>
+                                        </div>
+                                        <div class="menuSection__price">
+                                            <p>18€</p>
+                                        </div>
+                                    </div>
+                                    <div class="menuSection__btn">
+                                        <div class="menuSection__btn--transform">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="menuSection anim-9">
+                                <div class="menuSection__content">
+                                    <div class="menuSection__food">
+                                        <div class="menuSection__desc">
+                                            <h4>Crème brulée</h4>
+                                            <p>Revisitée</p>
+                                        </div>
+                                        <div class="menuSection__price">
+                                            <p>22€</p>
+                                        </div>
+                                    </div>
+                                    <div class="menuSection__btn">
+                                        <div class="menuSection__btn--transform">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="menuSection anim-10">
+                                <div class="menuSection__content">
+                                    <div class="menuSection__food">
+                                        <div class="menuSection__desc">
+                                            <h4>Tiramisu</h4>
+                                            <p>À la noisette</p>
+                                        </div>
+                                        <div class="menuSection__price">
+                                            <p>23€</p>
+                                        </div>
+                                    </div>
+                                    <div class="menuSection__btn">
+                                        <div class="menuSection__btn--transform">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <!-- Commande -->
+                <div class="menu__command">
+                    <input class="btn btn__command" type="submit" value="Commander">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+            <span class="footer__logo">ohmyfood</span>
+            <div class="footerAbout">
+                <ul class="footerAbout__you">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-utensils"></i> 
+                            <span class="footer__span">Proposer un restaurant</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-handshake-angle fa-xs"></i>
+                            <span class="footer__span">Devenir partenaire</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerAbout">
+                <ul class="footerAbout__us">
+                    <li>
+                        <a href="#">
+                            <span class="footer__span">Mentions légales</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:contact@ohmyfood.com">
+                            <span class="footer__span">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </footer>
+</body>

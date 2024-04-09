@@ -1,0 +1,23 @@
+@mixin flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    padding: 22px 25px;
+}
+
+@mixin footer-link{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
